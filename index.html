@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amistad</title>
+    <meta name="viewport" content="width=device-width, initial-scaled=1, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="amistad.css">
+</head>
+<body>
+    <div class="heading">
+        <h1 id="head"> Busqueda de amistad aplicando logica difusa</h1>
+        <h2 id="subheading"> <i>Desarrollado por: Yektli Rosario, Alexi Campos, Jorge Figueroa</i></h2>
+    </div>
+    <form>
+        <div id="content1">
+            <label>Nombre</label> <br><br>
+            <input type="name" name="name" placeholder="Introduce tu nombre" class="box"> <br><br>
+            <label>En que rango de edad estas?</label> <br><br>
+        <div id="option1">
+            <select id="edad1">
+                <option name="En que rango de edad estas? ">Seleciona una opcion</option>
+                <option value="0.125">10 - 15</option>
+                <option value="0.250">10 - 20</option>
+                <option value="0.375">21 - 25</option>
+                <option value="0.500">26 - 30</option>
+                <option value="0.625">31 - 35</option>
+                <option value="0.750">36 - 40</option>
+                <option value="0.875">41 - 45</option>
+                <option value="1">46 - 50</option>
+            </select>
+        </div>
+        <br>
+        <label id="head2">Con que genero te identificas?</label> <br> <br>
+        <div id="option2">
+            <select id="genero1">
+                <option name="Con que genero te identificas? ">Seleciona una opcion</option>
+                <option value="0.1">Femenino</option>
+                <option value="0.5">Masculino</option>
+                <option value="1">Otro</option>
+            </select>
+        </div>
+
+        <br>
+        <label id="head3">Cual es tu ocupacion?</label> <br> <br>
+        <div id="option3">
+            <select id="ocupacion1">
+                <option name="Cual es tu ocupacion?">Seleciona una opcion</option>
+                <option value="0.25">Estudiante</option>
+                <option value="0.50">Asalariado</option>
+                <option value="0.75">Desempleado</option>
+                <option value="1">Trabajador independiente</option>
+            </select>
+        </div>
+        <br>
+        <label id="head4">Como defines tu personalidad?</label> <br> <br>
+        <div id="option4">
+            <select id="personalidad1">
+                <option name="Como defines tu personalidad?">Seleciona una opcion</option>
+                <option value="0.1">Extrovertida</option>
+                <option value="0.5">Ambiverta</option>
+                <option value="1">Introvertida</option>
+            </select>
+        </div>
+        <br>
+        <label id="head5">Cual es tu enfoque?</label> <br> <br>
+        <div id="option5">
+            <select id="enfoque1">
+                <option name="Cual es tu enfoque?">Seleciona una opcion</option>
+                <option value="0.2">Familia</option>
+                <option value="0.4">Amigos</option>
+                <option value="0.6">Trabajo/Estudio</option>
+                <option value="0.8">Uno mismo</option>
+                <option value="1">Algun hobby</option>
+            </select>
+        </div>
+        <br>
+        <label id="head6">Que nivel de actividad deportiva tienes?</label> <br> <br>
+        <div id="option6">
+            <select id="actividad1">
+                <option name="Que nivel de actividad deportiva tienes?">Seleciona una opcion</option>
+                <option value="0.2">Nula</option>
+                <option value="0.4">Leve</option>
+                <option value="0.6">Moderada</option>
+                <option value="0.8">Alta</option>
+                <option value="1">Profesional</option>
+            </select>
+        </div>
+        <br>
+        <label id="head7">Cual es tu nivel educativo?</label> <br> <br>
+        <div id="option7">
+            <select id="educacion1">
+                <option name="Cual es tu nivel educativo?">Seleciona una opcion</option>
+                <option value="0.25">Basico</option>
+                <option value="0.5">Media superior</option>
+                <option value="0.75">Superior</option>
+                <option value="1">Ninguno</option>
+            </select>
+        </div>
+        <br>
+        <label id="head8">Cual es tu gusto por viajar?</label> <br> <br>
+        <div id="option8">
+            <select id="viajar1">
+                <option name="Cual es tu gusto por viajar?">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head9">Cual es tu nivel de paz interior?</label> <br> <br>
+        <div id="option9">
+            <select id="paz1">
+                <option name="Cual es tu nivel de paz interior?">Seleciona una opcion</option>
+                <option value="0.1">Calmado</option>
+                <option value="0.5">Reactivo</option>
+                <option value="1">Nervioso</option>
+            </select>
+        </div>
+        <br>
+        <label id="head10">Cual es tu gusto por los videojuegos?</label> <br> <br>
+        <div id="option10">
+            <select id="videojuegos1">
+                <option name="Cual es tu gusto por los videojuegos">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head11">Cual es tu nivel de apego por la religion?</label> <br> <br>
+        <div id="option11">
+            <select id="religion1">
+                <option name="Cual es tu nivel de apego por la religion?">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head12">Cual es tu nivel de apego por la familia?</label> <br> <br>
+        <div id="option12">
+            <select id="familia1">
+                <option name="Cual es tu nivel de apego por la familia">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head13">Gusto por ir al cine o ver peliculas</label> <br> <br>
+        <div id="option13">
+            <select id="cine1">
+                <option name="Gusto por ir al cine o ver peliculas">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head14">Que tanto te gusta leer?</label> <br> <br>
+        <div id="option14">
+            <select id="leer1">
+                <option name="Que tanto te gusta leer?">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <br>
+        <label id="head15">Cuanto te gustan las mascotas?</label> <br> <br>
+        <div id="option15">
+            <select id="mascota1">
+                <option name="Cuanto te gustan las mascotas?">Seleciona una opcion</option>
+                <option value="0.25">Nulo</option>
+                <option value="0.5">Leve</option>
+                <option value="0.75">Moderado</option>
+                <option value="1">Alto</option>
+            </select>
+        </div>
+        <script src="prueba.js"></script>
+        <script src="prueba2.js"></script>
+        <button onclick="calcular()"><h3>Buscar</h3></button>
+    </form>
+</body>
+</html>
